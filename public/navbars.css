@@ -1,0 +1,337 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+  }
+  @media (max-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-item:hover {
+      background-color: #e6ffe6;
+    }
+    }
+  
+  
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    .footer{
+      display: contents;
+    }
+    .flexx{
+      margin: 10px;
+    }
+    
+    .navbar h1 {
+      margin: 0;
+      color:#0aa83f ;
+      font-size: 25px;
+    }
+    .grid-item:hover {
+      background-color: #e6ffe6;
+    }
+    
+  }
+  .grid-item {
+    background-color:  #d2dfd5;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .grid-item:hover {
+    background-color: #e6ffe6;
+  }
+  .grid-item i {
+    font-size: 24px;
+    color: green;
+    margin-bottom: 10px;
+  }
+  
+  .grid-item p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .grid p{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .welcome {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .ai-avatar {
+    width: 80px;
+    height: 80px;
+    background-color:  #d2dfd5;
+    border-radius: 50%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #000;
+  }
+  
+  .speech {
+    background-color: #d2dfd5;
+    padding: 15px 20px;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    color: #000;
+  }
+  
+  
+  
+  
+  /* Aichat custom css*/
+  
+  
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+  }
+  
+  .chat-header {
+    background-color: #075e54;
+    color: white;
+    padding: 14px 16px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .chat-messages {
+  
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px 8px;
+    background: #d2dfd5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .message {
+    max-width: 75%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.4;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .user-message {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+    border-bottom-right-radius: 0;
+    font-size: x-large;
+  }
+  
+  .bot-message {
+    align-self: flex-start;
+    background-color: #ffffff;
+    border-bottom-left-radius: 0;
+    font-size: large;
+  }
+  
+  .chat-input-area {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 600px; /* Match your .chat-container width */
+    margin: auto;     /* Center it horizontally */
+    display: flex;
+    padding: 10px;
+    background: #d2dfd5;
+    border-top: 1px solid #ddd;
+    z-index: 1000;
+  }
+  
+  .chat-input-area input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  .chat-input-area button {
+    margin-left: 10px;
+    padding: 10px 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .chat-input-area button:hover {
+    background-color: #20c25d;
+  }
+  
+  .timestamp {
+    display: block;
+    font-size: 11px;
+    color: #888;
+    margin-top: 4px;
+    text-align: right;
+  }
+
+  #controls {
+    text-align: center;
+    padding: 10px;
+  }
+
+  #map {
+    height: 70vh;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    #map {
+      height: 60vh;
+      
+    }
+    .input-group button{
+      width: 100%;
+    }
+
+  }
+  .page {
+    
+    height: calc(100% - 60px); /* header height is 60px */
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+  }
+
+  .page .input-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+
+  .input-group input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .button1 {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 26px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  
+  .button1:hover {
+    background-color: #059c50;
+  }
+  
+
+  .input-group button {
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .card-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .card {
+    flex: 1;
+    min-width: 170px;
+    background-color: #e9f7c6;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+
+  .card p{
+    font-weight: bold;
+  }
+
+  .card h4 {
+    margin: 0 0 8px;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+
+  .input-group input, input{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .tracking-title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  main table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main th, main td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+main th {
+    background-color:  #07c160;
+    color: black;
+}
+
+main tr:nth-child(even) {
+    background-color: #e9f7c6;
+}
+.inn{display: inline;}
