@@ -29,7 +29,7 @@
 <body>
 
     <!-- navbar-->
-    <nav class="navbar navbar-dark bg-success py-4 " style="top: 0; right: 0; left: 0;"
+    <nav class="navbar navbar-dark  py-4 " style="top: 0; right: 0; left: 0;"
         aria-label="First navbar example">
         <div class="container-fluid">
             <div class="chat-header d-flex align-items-center bg-dark rounded-2 py-1 px-2" style="cursor: pointer;"
@@ -57,7 +57,7 @@
                             aria-expanded="false">Services</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item  bg-success inn" href="FindClinics.html">Find Clinics</a></li>
-                            <li><a class="dropdown-item" href="Checksymptoms.html">check Symptoms</a></li>
+                            <li><a class="dropdown-item" href="Checksymptoms.html">Check Symptoms</a></li>
                             <li><a class="dropdown-item" href="emergency.html">Emergency Numbers</a></li>
 
                         </ul>
@@ -73,10 +73,13 @@
     <!-- main-->
 
     <div id="controls" class="text-center px-5">
-        <button class="bg-success rounded-3 fw-bold" onclick="getUserLocation()">Find Hospitals Near Me</button>
+        <button class="py-2 px-5  rounded-3 fw-bold" onclick="getUserLocation()">Find Hospitals Near Me</button>
     </div>
 
-    <div id="map" class="bg-dark"></div>
+    <div id="map" ></div>
+    <footer class="text-center">
+        <p>@2025-Aidoctalk</p>
+    </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
 
