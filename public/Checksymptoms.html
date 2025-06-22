@@ -24,7 +24,7 @@
 <body>
 
     <!-- navbar-->
-    <nav class="navbar navbar-dark bg-success py-4 " aria-label="First navbar example">
+    <nav class="navbar navbar-dark  py-4 " aria-label="First navbar example">
         <div class="container-fluid">
             <div class="chat-header d-flex align-items-center bg-dark rounded-3 px-2 py-1" style="cursor: pointer;" onclick="goBack()">
                 <i class="bi bi-arrow-left me-3 fs-4" ></i>
@@ -67,26 +67,17 @@
 
     <div class="page">
         <!-- Symptom Checker Input -->
+        
+        <div id="chatMessages" class="chat-messages border rounded p-3 mb-3"></div>
         <div class="input-group">
-          <input type="text" placeholder="Describe your symptoms" />
-          <button class="bg-success">Check</button>
+            <form id="chatForm" class="chat-input-area d-flex gap-2">
+                <input type="text" class="form-control" id="userInput" placeholder="Describe your symptoms" autocomplete="off"
+                    required>
+                <button type="submit" class="px-4 bg-gr">Check</button> <br>
+            </form>
+        
         </div>
     
-        <!-- Info Cards -->
-        <div class="card-grid">
-          <div class="card">
-            <h4>Common Symptoms</h4>
-            <p>Browse a list of common symptoms</p>
-          </div>
-          <div class="card">
-            <h4>Symptom Severity</h4>
-            <p>Learn when to seek medical help</p>
-          </div>
-          <div class="card">
-            <h4>FAQs on Symptoms</h4>
-            <p>Get answers to symptom-related questions</p>
-          </div>
-        </div>
     
         <!-- Symptom Tracking -->
         <div class="tracking-title">Symptom Tracking</div>
