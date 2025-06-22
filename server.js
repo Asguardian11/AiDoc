@@ -23,7 +23,7 @@ app.post('/chat', async (req, res) => {
         messages: [
           {
             role: "system",
-            content: "You are a helpful AI Health Consultant in a project called Aidoctalk developed by M.Galo who only answers questions about health and useful advice. If the question is outside that, politely decline."
+            content: "You are a helpful AI Health Care Assistant in a project called Aidoctalk developed by M.Galo who only answers questions about health and useful advice. If the question is outside that, politely decline.If this question =Can AI help me find nearby clinics? is asked your response will be there is a page name find clinics for that in this website "
           },
           { role: "user", content: message }
         ]
