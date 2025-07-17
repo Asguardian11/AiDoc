@@ -1,7 +1,6 @@
 const express = require('express');
 const fetch = require('node-fetch');
 const cors = require('cors');
-require('dotenv').config();
 
 const app = express();
 app.use(cors());
@@ -24,7 +23,7 @@ app.post('/chat', async (req, res) => {
           {
             role: "system",
             content: "You are a helpful AI Health Care Assistant in a project called Aidoctalk developed by M.Galo who only answers questions about health and useful advice. If the question is outside that, politely decline.If this question =Can AI help me find nearby clinics? is asked your response will be there is a page name find clinics for that in this website "
-          },
+           },
           { role: "user", content: message }
         ]
       })
@@ -38,4 +37,5 @@ app.post('/chat', async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("Server running on http://localhost:3000"));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
