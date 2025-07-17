@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        const reply = data.choices?.[0]?.message?.content || "Sorry, no response.";
+        const reply = data.choices?.[0]?.message?.content || "Sorry, no response from AI.";
         typingIndicator.innerHTML = formatMessage(reply);
       })
       .catch((error) => {
